@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template = "/WEB-INF/layout/base.jsp">
+		<put-attribute name="title" value = "home"></put-attribute>
+		<put-attribute name="header" value = "/WEB-INF/layout/header.jsp"></put-attribute>
+		<put-attribute name="content" value = ""></put-attribute>
+		<put-attribute name="footer" value = "/WEB-INF/layout/footer.jsp"></put-attribute>
+	</definition>
+	<definition name="index" extends="baseLayout">
+		<put-attribute name="title" value = "home"></put-attribute>
+		<put-attribute name="content" value = "/WEB-INF/views/index.jsp"></put-attribute>
+	</definition>
+	<definition name="product" extends = "baseLayout" >
+		<put-attribute name="title" value = "Quan ly san pham" ></put-attribute>
+		<put-attribute name = "content" value = "/WEB-INF/views/product.jsp"></put-attribute>
+	</definition>
+	<definition name="login" extends = "baseLayout">
+		<put-attribute name="title" value = "Login"></put-attribute>
+		<put-attribute name="content" value = "/WEB-INF/views/login.jsp"></put-attribute>
+	</definition>
+	<definition name="register" extends = "baseLayout">
+		<put-attribute name="title" value = "Register"></put-attribute>
+		<put-attribute name="content" value = "/WEB-INF/views/register.jsp"></put-attribute>
+	</definition>
+	<definition name="cart" extends = "baseLayout">
+		<put-attribute name="title" value = "Gio Hang"></put-attribute>
+		<put-attribute name="content" value = "/WEB-INF/views/cart.jsp"></put-attribute>
+	</definition>
+	<definition name="detail" extends="baseLayout" >
+		<put-attribute name="title" value = "Chi Tiet San Pham"></put-attribute>
+		<put-attribute name="content" value = "/WEB-INF/views/detail.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>
